@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beadify – UMKM Manik-Manik</title>
 
+    <link rel="icon" type="image/png" href="Assets/logo.png">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -13,10 +15,22 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+    <!-- CSS -->
     <link href="index.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- Smooth Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,16 +42,16 @@
                 <img src="Assets/logo.png" alt="Logo Beadify">
             </div>
             <nav class="nav-links">
-                <a href="#">Beranda</a>
-                <a href="#">Profile UMKM</a>
-                <a href="#">Produk</a>
-                <a href="#">Kontak</a>
+                <a href="#beranda">Beranda</a>
+                <a href="#profile">Profile UMKM</a>
+                <a href="#produk">Produk</a>
+                <a href="#kontak">Kontak</a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- HERO / BERANDA -->
+    <section class="hero" id="beranda">
         <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
             <h1>
                 <span>SELAMAT DATANG</span>
@@ -45,17 +59,15 @@
             </h1>
             <div class="hashtag">#BersinarDenganGayaUnikMu</div>
             <p>
-                UMKM kami menyediakan aksesoris manik-manik handmade seperti gelang, kalung, cincin, dan phone charm
-                dengan desain unik, berkualitas, serta melayani pesanan custom.
+                UMKM kami menyediakan aksesoris manik-manik handmade seperti gelang, kalung, cincin,
+                dan phone charm dengan desain unik, berkualitas, serta melayani pesanan custom.
             </p>
             <div class="btn-group">
-                <a href="#" class="btn secondary">
-                    <i class="fab fa-whatsapp"></i>
-                    WhatsApp
+                <a href="https://wa.me/6281371621574" class="btn secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
-                <a href="#" class="btn secondary">
-                    <i class="fab fa-instagram"></i>
-                    Instagram
+                <a href="https://www.instagram.com/beadifydm_/" class="btn secondary" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
                 </a>
             </div>
         </div>
@@ -65,7 +77,64 @@
         </div>
     </section>
 
-    <!-- AOS JS -->
+    <!-- PROFILE UMKM -->
+    <section class="about" id="profile">
+        <div class="about-container">
+
+            <div class="about-images" data-aos="fade-right">
+                <img src="Assets/about 1.jpg" class="circle-img img-1" alt="Beadify Product">
+                <img src="Assets/about 2.jpg" class="circle-img img-2" alt="Beadify Handmade">
+                <img src="Assets/about 3.jpg" class="circle-img img-3" alt="Beadify Detail">
+            </div>
+
+            <div class="about-content" data-aos="fade-left">
+                <h2>ABOUT BEADIFY</h2>
+                <p>
+                    Beadify adalah UMKM kreatif di bidang aksesoris handmade dengan fokus pada produk
+                    manik-manik (beads). Setiap produk dibuat secara manual dengan penuh ketelitian
+                    dan kreativitas.
+                </p>
+
+                <div class="vm-box">
+                    <div class="vm-card">
+                        <h3>VISI</h3>
+                        <p>
+                            Menjadi UMKM aksesoris handmade yang dikenal luas karena kualitas dan
+                            keunikan desain.
+                        </p>
+                    </div>
+
+                    <div class="vm-card">
+                        <h3>MISI</h3>
+                        <ul>
+                            <li>Menghadirkan produk handmade berkualitas</li>
+                            <li>Mendukung kreativitas dan produk lokal</li>
+                            <li>Mengikuti tren tanpa meninggalkan nilai seni</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUK (PLACEHOLDER) -->
+    <section id="produk" style="padding:80px 24px; text-align:center;">
+        <h2 style="color:#d64b6a; font-size:2.2rem;">PRODUK</h2>
+        <p style="max-width:600px; margin:16px auto; color:#555;">
+            Katalog produk Beadify akan segera ditampilkan di sini.
+        </p>
+    </section>
+
+    <!-- KONTAK (PLACEHOLDER) -->
+    <section id="kontak" style="padding:80px 24px; text-align:center;">
+        <h2 style="color:#d64b6a; font-size:2.2rem;">KONTAK</h2>
+        <p style="max-width:600px; margin:16px auto; color:#555;">
+            Hubungi kami melalui WhatsApp atau Instagram untuk pemesanan dan custom produk.
+        </p>
+    </section>
+
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
