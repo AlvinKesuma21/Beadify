@@ -629,13 +629,17 @@ header {
 /* FOTO TIM */
 .team-image img {
     width: 100%;
-    border-radius: 28px;
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    background: none;
     transition: transform .4s ease;
 }
 
 .team-image img:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
+    /* efek hover halus saja */
 }
 
 /* IDENTITAS */
