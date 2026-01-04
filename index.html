@@ -55,9 +55,8 @@
     <!-- HERO / BERANDA -->
     <section class="hero" id="beranda">
         <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
-            <h1>
-                <span>SELAMAT DATANG</span>
-                <span>DI BEADIFY</span>
+            <h1 class="typing-title">
+                <span id="typing-text"></span>
             </h1>
             <div class="hashtag">#BersinarDenganGayaUnikMu</div>
             <p>
@@ -439,6 +438,44 @@
             duration: 1000,
             once: true
         });
+    </script>
+
+    <script>
+        const text = "SELAMAT DATANG DI BEADIFY";
+        const typingTarget = document.getElementById("typing-text");
+
+        let index = 0;
+        let isDeleting = false;
+
+        const typingSpeed = 120;   
+        const deletingSpeed = 80; 
+        const holdAfterType = 1800;
+
+        function typingEffect() {
+            if (!isDeleting) {
+                typingTarget.textContent = text.substring(0, index + 1);
+                index++;
+
+                if (index === text.length) {
+                    setTimeout(() => isDeleting = true, holdAfterType);
+                    return;
+                }
+            } else {
+                typingTarget.textContent = text.substring(0, index - 1);
+                index--;
+
+                if (index === 0) {
+                    isDeleting = false;
+                }
+            }
+
+            setTimeout(
+                typingEffect,
+                isDeleting ? deletingSpeed : typingSpeed
+            );
+        }
+
+        typingEffect();
     </script>
 
     <script>
