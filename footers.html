@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beadify Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #cd4666 0%, #cd4666 100%);
+            color: white;
+            padding: 60px 40px 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        .footer-links {
+            flex: 2;
+            display: flex;
+            justify-content: space-around;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            min-width: 150px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .footer-column ul li a:hover {
+            opacity: 1;
+            transform: translateX(5px);
+        }
+
+        .footer-divider {
+            width: 100%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 40px 0 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 40px 20px 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .footer-links {
+                width: 100%;
+                gap: 40px;
+            }
+
+            .footer-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <!-- Ganti 'logo.png' dengan nama file logo Anda -->
+                <img src="logo.png" alt="Beadify Logo">
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Toko</h3>
+                    <ul>
+                        <li><a href="#shopee">Shopee</a></li>
+                        <li><a href="#tokopedia">Tokopedia</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="#whatsapp">WhatsApp</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>©2025 Beadify. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
